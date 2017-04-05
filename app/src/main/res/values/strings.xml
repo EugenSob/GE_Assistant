@@ -1,7 +1,9 @@
 <resources>
 
-    <string name="app_name">GlassCardScrollerExample</string>
-    
-    <string name="voice_trigger">Show Card Scroller</string>
+    <string name="app_name">GE Assistant</string>
 
+    <!-- Tip text displayed at the bottom of the splash screen. -->
+    <string name="tap_for_options">Tap for options</string>
+    <string name="machine_list">Machine List</string>
+    <string name="qr_code">Scan QR code</string>
 </resources>

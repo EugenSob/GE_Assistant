@@ -7,8 +7,56 @@
                     "startLine": 2,
                     "startColumn": 4,
                     "startOffset": 55,
-                    "endColumn": 61,
-                    "endOffset": 112
+                    "endColumn": 42,
+                    "endOffset": 93
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 98,
+                    "endColumn": 55,
+                    "endOffset": 149
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 154,
+                    "endColumn": 48,
+                    "endOffset": 198
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 203,
+                    "endColumn": 48,
+                    "endOffset": 247
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\dimens.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 252,
+                    "endColumn": 49,
+                    "endOffset": 297
                 },
                 "from": {
                     "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
@@ -16,70 +64,71 @@
                         "startLine": 2,
                         "startColumn": 4,
                         "startOffset": 17,
-                        "endColumn": 61,
-                        "endOffset": 74
+                        "endColumn": 49,
+                        "endOffset": 62
                     }
                 }
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 7,
                     "startColumn": 4,
-                    "startOffset": 117,
-                    "endColumn": 60,
-                    "endOffset": 173
+                    "startOffset": 302,
+                    "endColumn": 53,
+                    "endOffset": 351
                 },
                 "from": {
-                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 84,
-                        "endColumn": 60,
-                        "endOffset": 140
-                    }
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 178,
-                    "endLine": 10,
+                    "startOffset": 356,
+                    "endColumn": 48,
+                    "endOffset": 400
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 405,
+                    "endColumn": 59,
+                    "endOffset": 460
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 465,
+                    "endLine": 12,
                     "endColumn": 12,
-                    "endOffset": 464
+                    "endOffset": 543
                 },
                 "from": {
-                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 186,
-                        "endLine": 12,
-                        "endColumn": 12,
-                        "endOffset": 472
-                    }
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 11,
+                    "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 469,
-                    "endLine": 13,
+                    "startOffset": 548,
+                    "endLine": 15,
                     "endColumn": 12,
-                    "endOffset": 624
+                    "endOffset": 615
                 },
                 "from": {
-                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 510,
-                        "endLine": 17,
-                        "endColumn": 12,
-                        "endOffset": 665
-                    }
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml"
                 }
             }
         ]

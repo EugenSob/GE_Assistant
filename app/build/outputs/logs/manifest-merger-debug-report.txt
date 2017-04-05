@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:1:1-32:12
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:1:1-30:12
 	package
 		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:2:5-18
 		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
@@ -30,19 +30,19 @@ ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidM
 	android:name
 		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:11:22-84
 application
-ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:13:5-30:19
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:13:5-28:19
 	android:label
 		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:16:13-45
 	android:allowBackup
 		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:14:10-36
 	android:icon
 		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:15:10-48
-activity#com.MainActivity
+activity#com.SplashScreenActivity
 ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:18:9-26:20
 	android:immersive
 		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:19:13-37
 	android:name
-		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:18:19-50
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:18:19-58
 intent-filter#com.google.android.glass.action.VOICE_TRIGGER
 ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:20:13-22:29
 action#com.google.android.glass.action.VOICE_TRIGGER
