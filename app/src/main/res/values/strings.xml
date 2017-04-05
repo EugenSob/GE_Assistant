@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">GlassCardScrollerExample</string>
+    
+    <string name="voice_trigger">Show Card Scroller</string>
+
+</resources>

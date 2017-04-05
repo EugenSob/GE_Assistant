@@ -1,0 +1,87 @@
+[
+    {
+        "outputFile": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 61,
+                    "endOffset": 112
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 17,
+                        "endColumn": 61,
+                        "endOffset": 74
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 117,
+                    "endColumn": 60,
+                    "endOffset": 173
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 84,
+                        "endColumn": 60,
+                        "endOffset": 140
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 178,
+                    "endLine": 10,
+                    "endColumn": 12,
+                    "endOffset": 464
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 186,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 469,
+                    "endLine": 13,
+                    "endColumn": 12,
+                    "endOffset": 624
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 510,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 665
+                    }
+                }
+            }
+        ]
+    }
+]
