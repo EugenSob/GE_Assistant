@@ -1,0 +1,57 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:1:1-32:12
+	package
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:2:5-18
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:1:11-69
+uses-sdk
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:6:5-8:41
+	android:targetSdkVersion
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:8:9-38
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:7:9-35
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml
+uses-permission#com.google.android.glass.permission.DEVELOPMENT
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:11:5-86
+	android:name
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:11:22-84
+application
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:13:5-30:19
+	android:label
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:16:13-45
+	android:allowBackup
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:14:10-36
+	android:icon
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:15:10-48
+activity#com.MainActivity
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:18:9-26:20
+	android:immersive
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:19:13-37
+	android:name
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:18:19-50
+intent-filter#com.google.android.glass.action.VOICE_TRIGGER
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:20:13-22:29
+action#com.google.android.glass.action.VOICE_TRIGGER
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:21:17-88
+	android:name
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:21:25-85
+meta-data#com.google.android.glass.VoiceTrigger
+ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:23:13-25:19
+	android:resource
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:24:17-54
+	android:name
+		ADDED from C:\Users\eugenio.soberon\Documents\GE_Assistant\app\src\main\AndroidManifest.xml:23:24-76
