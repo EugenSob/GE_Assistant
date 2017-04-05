@@ -1,9 +1,33 @@
 <resources>
 
     <string name="app_name">GE Assistant</string>
+    <string name="main_activity_title">Assist me</string>
 
-    <!-- Tip text displayed at the bottom of the splash screen. -->
+    <!-- Splash Screen -->
     <string name="tap_for_options">Tap for options</string>
-    <string name="machine_list">Machine List</string>
+
+    <!-- Activities -->
+    <string name="machine_list">Machine list</string>
     <string name="qr_code">Scan QR code</string>
+
+    <!-- Machines -->
+    <string name="machine_aviation">Aviation</string>
+    <string name="machine_appliances">Appliances</string>
+
+    <!-- Model -->
+    <string name="model_aviation_1">Engine alpha</string>
+    <string name="model_aviation_2">Engine beta</string>
+    <string name="model_appliances_1">Model alpha</string>
+    <string name="model_appliances_2">Model beta</string>
+
+    <!-- Requests -->
+    <string name="repair">Repair</string>
+    <string name="assemble">Assemble</string>
+
+    <!-- Steps -->
+    <string name="step_1">Step 1</string>
+    <string name="step_2">Step 2</string>
+    <string name="step_3">Step 3</string>
+
+
 </resources>
