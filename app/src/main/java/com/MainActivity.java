@@ -11,14 +11,16 @@ import android.os.Handler;
 import com.google.android.glass.media.Sounds;
 import com.google.android.glass.touchpad.Gesture;
 import com.google.android.glass.touchpad.GestureDetector;
+import com.google.android.glass.view.WindowUtils;
 import com.google.android.glass.widget.CardBuilder;
 import com.google.android.glass.widget.CardScrollView;
 import android.media.AudioManager;
+import android.speech.RecognizerIntent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 
-public class SplashScreenActivity extends Activity {
+public class MainActivity extends Activity {
 
 
     // Handler used to post new requests to start new activities
@@ -114,6 +116,30 @@ public class SplashScreenActivity extends Activity {
             default:
                 return false;
         }
+    }
+
+    @Override
+    public boolean onCreatePanelMenu(int featureId, Menu menu) {
+        if (featureId == WindowUtils.FEATURE_VOICE_COMMANDS){
+            getMenuInflater().inflate(R.menu.main, menu);
+            return true;
+        }
+        return super.onCreatePanelMenu(featureId, menu);
+    }
+
+    @Override
+    public boolean onMenuItemSelected(int featureId, MenuItem item) {
+        // 1
+        if (featureId == WindowUtils.FEATURE_VOICE_COMMANDS) {
+            // 2
+            Intent intent_voice_select = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
+            // 3
+            //INSERT ACTION AFTER MENU SELECT
+            startActivity(new Intent(this, MenuItem.class));
+            finish();
+
+        }
+        return super.onMenuItemSelected(featureId, item);
     }
 
     private void startMachine() {
