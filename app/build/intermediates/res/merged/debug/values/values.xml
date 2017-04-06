@@ -5,10 +5,22 @@
     <dimen name="timer_margin_left">40px</dimen>
     <dimen name="tip_margin_bottom">33px</dimen>
     <string name="app_name">GE Assistant</string>
-    <string name="machine_list">Machine List</string>
+    <string name="assemble">Assemble</string>
+    <string name="machine_appliances">Appliances</string>
+    <string name="machine_aviation">Aviation</string>
+    <string name="machine_list">Machine list</string>
+    <string name="main_activity_title">Assist me</string>
+    <string name="model_appliances_1">Model alpha</string>
+    <string name="model_appliances_2">Model beta</string>
+    <string name="model_aviation_1">Engine alpha</string>
+    <string name="model_aviation_2">Engine beta</string>
     <string name="qr_code">Scan QR code</string>
+    <string name="repair">Repair</string>
+    <string name="step_1">Step 1</string>
+    <string name="step_2">Step 2</string>
+    <string name="step_3">Step 3</string>
     <string name="tap_for_options">Tap for options</string>
-    <style name="AppBaseTheme" parent="android:Theme.Light">
+    <style name="AppBaseTheme" parent="android:Theme.DeviceDefault">
         <!--
             Theme customizations available in newer API levels can go in
             res/values-vXX/styles.xml, while customizations related to

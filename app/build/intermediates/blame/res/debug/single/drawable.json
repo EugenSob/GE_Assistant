@@ -1,23 +1,27 @@
 [
     {
-        "merged": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_help_50.png",
-        "source": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\drawable\\ic_help_50.png"
+        "merged": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ge_aviation_menu_bg.PNG",
+        "source": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\drawable\\ge_aviation_menu_bg.PNG"
+    },
+    {
+        "merged": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ge_logo.png",
+        "source": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\drawable\\ge_logo.png"
     },
     {
         "merged": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_glass_logo.png",
         "source": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\drawable\\ic_glass_logo.png"
     },
     {
-        "merged": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",
-        "source": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\drawable\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_help_50.png",
         "source": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\drawable\\ic_help_50.png"
     },
     {
-        "merged": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_glass_logo.png",
-        "source": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\drawable\\ic_glass_logo.png"
+        "merged": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ge_appliances_menu_bg.PNG",
+        "source": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\drawable\\ge_appliances_menu_bg.PNG"
+    },
+    {
+        "merged": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ge_background_title.png",
+        "source": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\drawable\\ge_background_title.png"
     },
     {
         "merged": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_launcher.png",

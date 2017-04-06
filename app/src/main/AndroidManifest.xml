@@ -18,7 +18,7 @@
             android:theme="@style/AppTheme">>
         
         <activity
-            android:name="com.MainActivity"
+            android:name="com.SplashScreenActivity"
             android:immersive="true"
             android:icon="@drawable/ge_logo"
             android:label="@string/main_activity_title">

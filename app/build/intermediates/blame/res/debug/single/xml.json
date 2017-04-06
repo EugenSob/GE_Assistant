@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voice_trigger.xml",
-        "source": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\xml\\voice_trigger.xml"
-    },
-    {
         "merged": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\build\\intermediates\\res\\merged\\debug\\xml\\voice_trigger.xml",
         "source": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\xml\\voice_trigger.xml"
     }
