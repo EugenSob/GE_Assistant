@@ -13,12 +13,16 @@ import com.google.android.glass.touchpad.Gesture;
 import com.google.android.glass.touchpad.GestureDetector;
 import com.google.android.glass.view.WindowUtils;
 import com.google.android.glass.widget.CardBuilder;
+import com.google.android.glass.widget.CardScrollAdapter;
 import com.google.android.glass.widget.CardScrollView;
 import android.media.AudioManager;
 import android.speech.RecognizerIntent;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
 
 
 public class MainActivity extends Activity {
@@ -48,13 +52,52 @@ public class MainActivity extends Activity {
         }
     };
 
-
+    private CardScrollView mCardScroller;
+    private View mView;
 
     @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
+        getWindow().requestFeature(WindowUtils.FEATURE_VOICE_COMMANDS);
 
-        setContentView(R.layout.title_ge_assist);
+        mView = buildView();
+
+        mCardScroller = new CardScrollView(this);
+        mCardScroller.setAdapter(new CardScrollAdapter() {
+            @Override
+            public int getCount() {
+                return 1;
+            }
+
+            @Override
+            public Object getItem(int position) {
+                return mView;
+            }
+
+            @Override
+            public View getView(int position, View convertView, ViewGroup parent) {
+                return mView;
+            }
+
+            @Override
+            public int getPosition(Object item) {
+                if (mView.equals(item)) {
+                    return 0;
+                }
+                return AdapterView.INVALID_POSITION;
+            }
+        });
+        // Handle the TAP event.
+        mCardScroller.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                // Plays disallowed sound to indicate that TAP actions are not supported.
+                AudioManager am = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
+                am.playSoundEffect(Sounds.DISALLOWED);
+            }
+        });
+        setContentView(mCardScroller);
+
 
         mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
         mGestureDetector = new GestureDetector(this).setBaseListener(mBaseListener);
@@ -80,6 +123,16 @@ public class MainActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
+    }
+
+    private View buildView() {
+        CardBuilder card = new CardBuilder(this, CardBuilder.Layout.TEXT);
+
+        card.setText(R.string.machine_list);
+        card.setText(R.string.qr_code);
+
+        return card.getView();
+
     }
 
     /**
@@ -135,8 +188,7 @@ public class MainActivity extends Activity {
             // 2
             Intent intent_voice_select = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
             // 3
-            //INSERT ACTION AFTER MENU SELECT
-            startActivity(new Intent(this, MenuItem.class));
+            //startActivity();
             finish();
 
         }
