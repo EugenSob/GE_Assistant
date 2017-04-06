@@ -21,7 +21,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 
 
-public class MainActivity extends Activity {
+public class SplashScreenActivity extends Activity {
 
 
     // Handler used to post new requests to start new activities
@@ -47,8 +47,6 @@ public class MainActivity extends Activity {
             }
         }
     };
-
-
 
     @Override
     protected void onCreate(Bundle bundle) {
@@ -94,6 +92,7 @@ public class MainActivity extends Activity {
         // By posting the calls to a handler instead, they will be processed on an upcoming pass
         // through the message queue, after the animation has completed, which results in a
         // smoother transition between activities.
+        /*
         switch (item.getItemId()) {
             case R.id.machineList:
                 mHandler.post(new Runnable() {
@@ -103,7 +102,7 @@ public class MainActivity extends Activity {
                     }
                 });
                 return true;
-            /*
+
             case R.id.qrCode:
                 mHandler.post(new Runnable() {
                     @Override
@@ -112,11 +111,12 @@ public class MainActivity extends Activity {
                     }
                 });
                 return true;
-            */
+
 
             default:
                 return false;
-        }
+        }*/
+        return true;
     }
 
     @Override

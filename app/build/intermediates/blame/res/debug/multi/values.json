@@ -59,14 +59,7 @@
                     "endOffset": 297
                 },
                 "from": {
-                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 17,
-                        "endColumn": 49,
-                        "endOffset": 62
-                    }
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
@@ -74,8 +67,8 @@
                     "startLine": 7,
                     "startColumn": 4,
                     "startOffset": 302,
-                    "endColumn": 53,
-                    "endOffset": 351
+                    "endColumn": 45,
+                    "endOffset": 343
                 },
                 "from": {
                     "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
@@ -85,9 +78,9 @@
                 "to": {
                     "startLine": 8,
                     "startColumn": 4,
-                    "startOffset": 356,
-                    "endColumn": 48,
-                    "endOffset": 400
+                    "startOffset": 348,
+                    "endColumn": 57,
+                    "endOffset": 401
                 },
                 "from": {
                     "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
@@ -97,9 +90,9 @@
                 "to": {
                     "startLine": 9,
                     "startColumn": 4,
-                    "startOffset": 405,
-                    "endColumn": 59,
-                    "endOffset": 460
+                    "startOffset": 406,
+                    "endColumn": 53,
+                    "endOffset": 455
                 },
                 "from": {
                     "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
@@ -109,224 +102,185 @@
                 "to": {
                     "startLine": 10,
                     "startColumn": 4,
-                    "startOffset": 465,
-                    "endLine": 12,
-                    "endColumn": 12,
-                    "endOffset": 543
+                    "startOffset": 460,
+                    "endColumn": 53,
+                    "endOffset": 509
                 },
                 "from": {
-                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml"
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 514,
+                    "endColumn": 57,
+                    "endOffset": 567
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 572,
+                    "endColumn": 58,
+                    "endOffset": 626
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 13,
                     "startColumn": 4,
-                    "startOffset": 548,
-                    "endLine": 15,
-                    "endColumn": 12,
-                    "endOffset": 615
+                    "startOffset": 631,
+                    "endColumn": 57,
+                    "endOffset": 684
                 },
                 "from": {
-                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml"
-                }
-            }
-        ]
-    },
-    {
-        "outputFile": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
-        "map": [
-            {
-                "to": {
-                    "startLine": 2,
-                    "startColumn": 4,
-                    "startOffset": 55,
-                    "endColumn": 42,
-                    "endOffset": 93
-                },
-                "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\dimens.xml",
-                    "position": {
-                        "startLine": 4,
-                        "startColumn": 4,
-                        "startOffset": 143,
-                        "endColumn": 42,
-                        "endOffset": 181
-                    }
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 3,
+                    "startLine": 14,
                     "startColumn": 4,
-                    "startOffset": 98,
-                    "endColumn": 55,
-                    "endOffset": 149
+                    "startOffset": 689,
+                    "endColumn": 57,
+                    "endOffset": 742
                 },
                 "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\dimens.xml",
-                    "position": {
-                        "startLine": 15,
-                        "startColumn": 4,
-                        "startOffset": 678,
-                        "endColumn": 55,
-                        "endOffset": 729
-                    }
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
-                    "startLine": 4,
+                    "startLine": 15,
                     "startColumn": 4,
-                    "startOffset": 154,
+                    "startOffset": 747,
+                    "endColumn": 56,
+                    "endOffset": 799
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 16,
+                    "startColumn": 4,
+                    "startOffset": 804,
                     "endColumn": 48,
-                    "endOffset": 198
+                    "endOffset": 848
                 },
                 "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\dimens.xml",
-                    "position": {
-                        "startLine": 12,
-                        "startColumn": 4,
-                        "startOffset": 533,
-                        "endColumn": 48,
-                        "endOffset": 577
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 5,
-                    "startColumn": 4,
-                    "startOffset": 203,
-                    "endColumn": 48,
-                    "endOffset": 247
-                },
-                "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\dimens.xml",
-                    "position": {
-                        "startLine": 8,
-                        "startColumn": 4,
-                        "startOffset": 365,
-                        "endColumn": 48,
-                        "endOffset": 409
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 6,
-                    "startColumn": 4,
-                    "startOffset": 252,
-                    "endColumn": 49,
-                    "endOffset": 297
-                },
-                "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 2,
-                        "startColumn": 4,
-                        "startOffset": 19,
-                        "endColumn": 49,
-                        "endOffset": 64
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 7,
-                    "startColumn": 4,
-                    "startOffset": 302,
-                    "endColumn": 53,
-                    "endOffset": 351
-                },
-                "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 202,
-                        "endColumn": 53,
-                        "endOffset": 251
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 8,
-                    "startColumn": 4,
-                    "startOffset": 356,
-                    "endColumn": 48,
-                    "endOffset": 400
-                },
-                "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 7,
-                        "startColumn": 4,
-                        "startOffset": 257,
-                        "endColumn": 48,
-                        "endOffset": 301
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 9,
-                    "startColumn": 4,
-                    "startOffset": 405,
-                    "endColumn": 59,
-                    "endOffset": 460
-                },
-                "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml",
-                    "position": {
-                        "startLine": 5,
-                        "startColumn": 4,
-                        "startOffset": 141,
-                        "endColumn": 59,
-                        "endOffset": 196
-                    }
-                }
-            },
-            {
-                "to": {
-                    "startLine": 10,
-                    "startColumn": 4,
-                    "startOffset": 465,
-                    "endLine": 16,
-                    "endColumn": 12,
-                    "endOffset": 751
-                },
-                "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml",
-                    "position": {
-                        "startLine": 6,
-                        "startColumn": 4,
-                        "startOffset": 192,
-                        "endLine": 12,
-                        "endColumn": 12,
-                        "endOffset": 484
-                    }
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
                 }
             },
             {
                 "to": {
                     "startLine": 17,
                     "startColumn": 4,
-                    "startOffset": 756,
-                    "endLine": 19,
-                    "endColumn": 12,
-                    "endOffset": 911
+                    "startOffset": 853,
+                    "endColumn": 41,
+                    "endOffset": 890
                 },
                 "from": {
-                    "file": "C:\\Users\\ricardoa.trevizo\\AndroidStudioProjects\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml",
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 895,
+                    "endColumn": 41,
+                    "endOffset": 932
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 19,
+                    "startColumn": 4,
+                    "startOffset": 937,
+                    "endColumn": 41,
+                    "endOffset": 974
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 20,
+                    "startColumn": 4,
+                    "startOffset": 979,
+                    "endColumn": 41,
+                    "endOffset": 1016
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 21,
+                    "startColumn": 4,
+                    "startOffset": 1021,
+                    "endColumn": 59,
+                    "endOffset": 1076
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\strings.xml"
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 1081,
+                    "endLine": 28,
+                    "endColumn": 12,
+                    "endOffset": 1375
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 186,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 480
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 29,
+                    "startColumn": 4,
+                    "startOffset": 1380,
+                    "endLine": 31,
+                    "endColumn": 12,
+                    "endOffset": 1535
+                },
+                "from": {
+                    "file": "C:\\Users\\eugenio.soberon\\Documents\\GE_Assistant\\app\\src\\main\\res\\values\\styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 525,
+                        "startOffset": 518,
                         "endLine": 17,
                         "endColumn": 12,
-                        "endOffset": 682
+                        "endOffset": 673
                     }
                 }
             }

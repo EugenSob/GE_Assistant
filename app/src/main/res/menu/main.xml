@@ -5,7 +5,25 @@
         android:id="@+id/machineList"
         android:icon="@drawable/ic_help_50"
         android:title="@string/machine_list"
-        />
+        >
+        <menu>
+            <item
+                android:id="@+id/aviation_machines"
+                android:title="@string/machine_aviation">
+                <menu>
+                    <item
+                        android:id="@+id/aMachine1"
+                        android:title="@string/model_aviation_1"/>
+                    <item
+                        android:id="@+id/aMachine2"
+                        android:title="@string/model_aviation_2"/>
+                </menu>
+            </item>
+            <item
+                android:id="@+id/machine2"
+                android:title="@string/machine_appliances" />
+        </menu>
+     </item>
     <item
         android:id="@+id/qrCode"
         android:icon="@drawable/ic_help_50"
