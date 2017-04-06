@@ -3,7 +3,6 @@
 
     <item
         android:id="@+id/machineList"
-        android:icon="@drawable/ic_help_50"
         android:title="@string/machine_list"
         >
         <menu>
@@ -26,7 +25,6 @@
      </item>
     <item
         android:id="@+id/qrCode"
-        android:icon="@drawable/ic_help_50"
         android:title="@string/qr_code"
         />
 
