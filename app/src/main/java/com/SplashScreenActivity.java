@@ -21,7 +21,7 @@ import android.view.MenuItem;
 import android.view.MotionEvent;
 
 
-public class MainActivity extends Activity {
+public class SplashScreenActivity extends Activity {
 
 
     // Handler used to post new requests to start new activities
@@ -157,12 +157,12 @@ public class MainActivity extends Activity {
 //	@Override
 //	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
 //		// TODO Auto-generated method stub
-//		
+//
 //	}
-    
-    
 
-    
-    
+
+
+
+
 }
 
