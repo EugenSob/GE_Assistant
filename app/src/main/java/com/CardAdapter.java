@@ -15,7 +15,7 @@ public class CardAdapter extends CardScrollAdapter {
 
 	private final List<CardBuilder> mCards;
 
-    public CardAdapter(ArrayList<CardBuilder> cards) {
+    public CardAdapter(List<CardBuilder> cards) {
         mCards = cards;
     }
 
@@ -52,5 +52,10 @@ public class CardAdapter extends CardScrollAdapter {
             }
         }
         return AdapterView.INVALID_POSITION;
+    }
+
+    @Override
+    public boolean hasStableIds(){
+        return true;
     }
 }

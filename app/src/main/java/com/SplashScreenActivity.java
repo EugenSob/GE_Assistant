@@ -1,69 +1,75 @@
 package com;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+
 import android.os.Bundle;
 import android.os.Handler;
-
-import com.google.android.glass.media.Sounds;
-import com.google.android.glass.touchpad.Gesture;
-import com.google.android.glass.touchpad.GestureDetector;
-import com.google.android.glass.view.WindowUtils;
-import com.google.android.glass.widget.CardBuilder;
-import com.google.android.glass.widget.CardScrollView;
-import android.media.AudioManager;
-import android.speech.RecognizerIntent;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
-public class SplashScreenActivity extends Activity {
+import com.google.android.glass.widget.CardBuilder;
+import com.google.android.glass.widget.CardScrollView;
 
+/**
+ * Created by eugenio.soberon on 05/04/2017.
+ */
 
-    // Handler used to post new requests to start new activities
-    // so animation works correctly
+public class SplashScreenActivity extends Activity{
+
+    private static final String TAG = MachineListActivity.class.getSimpleName();
+
     private final Handler mHandler = new Handler();
 
-    /** Audio manager used to play system sound effects. */
-    private AudioManager mAudioManager;
+    private CardScrollView mCardScroller;
+    private CardAdapter mCardAdapter;
 
-    /** Gesture detector used to present the options menu. */
-    private GestureDetector mGestureDetector;
-
-    /** Listener that displays the options menu when the touchpad is tapped. */
-    private final GestureDetector.BaseListener mBaseListener = new GestureDetector.BaseListener() {
-        @Override
-        public boolean onGesture(Gesture gesture) {
-            if (gesture == Gesture.TAP) {
-                mAudioManager.playSoundEffect(Sounds.TAP);
-                openOptionsMenu();
-                return true;
-            } else {
-                return false;
-            }
-        }
-    };
-
-
-
-    @Override
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
 
-        setContentView(R.layout.title_ge_assist);
+        mCardAdapter = new CardAdapter(createCards(this));
 
-        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        mGestureDetector = new GestureDetector(this).setBaseListener(mBaseListener);
+        mCardScroller = new CardScrollView(this);
+
+        //Este es tap handler, la posicion de las card empiza en 0 y asciende de 1 en 1
+        mCardScroller.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapter, View v, int position,
+                                    long arg3) {
+                if(mCardScroller.getSelectedItemPosition() == 0) {
+                    //El handler activa la visualizacion del menu
+                    //o llama a otra activity a traves del activity handler
+                    openOptionsMenu();
+                }
+            }
+        });
+
+        mCardScroller.setAdapter(mCardAdapter);
+
+        setContentView(mCardScroller);
 
     }
 
-    @Override
-    public boolean onGenericMotionEvent(MotionEvent event) {
-        return mGestureDetector.onMotionEvent(event);
+    private List<CardBuilder> createCards(Context context) {
+
+        CardBuilder card1 = new CardBuilder(context, CardBuilder.Layout.MENU);
+                //Por alguna extraña razon crashea con la siguiente linea
+                //card1.addImage(R.drawable.ge_background_title);
+                card1.setText("GE Assistant");
+                card1.setFootnote("Tap for options");
+
+        ArrayList<CardBuilder> cards = new ArrayList<CardBuilder>();
+        cards.add(card1);
+
+        return cards;
     }
 
     @Override
@@ -75,25 +81,17 @@ public class SplashScreenActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+        mCardScroller.activate();
     }
 
     @Override
     protected void onPause() {
+        mCardScroller.deactivate();
         super.onPause();
     }
 
-    /**
-     * The act of starting an activity here is wrapped inside a posted {@code Runnable} to avoid
-     * animation problems between the closing menu and the new activity. The post ensures that the
-     * menu gets the chance to slide down off the screen before the activity is started.
-     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // The startXXX() methods start a new activity, and if we call them directly here then
-        // the new activity will start without giving the menu a chance to slide back down first.
-        // By posting the calls to a handler instead, they will be processed on an upcoming pass
-        // through the message queue, after the animation has completed, which results in a
-        // smoother transition between activities.
         switch (item.getItemId()) {
             case R.id.machineList:
                 mHandler.post(new Runnable() {
@@ -103,7 +101,6 @@ public class SplashScreenActivity extends Activity {
                     }
                 });
                 return true;
-            /*
             case R.id.qrCode:
                 mHandler.post(new Runnable() {
                     @Override
@@ -112,35 +109,9 @@ public class SplashScreenActivity extends Activity {
                     }
                 });
                 return true;
-            */
-
             default:
                 return false;
         }
-    }
-
-    @Override
-    public boolean onCreatePanelMenu(int featureId, Menu menu) {
-        if (featureId == WindowUtils.FEATURE_VOICE_COMMANDS){
-            getMenuInflater().inflate(R.menu.main, menu);
-            return true;
-        }
-        return super.onCreatePanelMenu(featureId, menu);
-    }
-
-    @Override
-    public boolean onMenuItemSelected(int featureId, MenuItem item) {
-        // 1
-        if (featureId == WindowUtils.FEATURE_VOICE_COMMANDS) {
-            // 2
-            Intent intent_voice_select = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
-            // 3
-            //INSERT ACTION AFTER MENU SELECT
-            startActivity(new Intent(this, MenuItem.class));
-            finish();
-
-        }
-        return super.onMenuItemSelected(featureId, item);
     }
 
     private void startMachine() {
@@ -152,17 +123,4 @@ public class SplashScreenActivity extends Activity {
         startActivity(new Intent(this, QRcodeActivity.class));
         finish();
     }
-
-
-//	@Override
-//	public void onItemClick(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
-//		// TODO Auto-generated method stub
-//
-//	}
-
-
-
-
-
 }
-

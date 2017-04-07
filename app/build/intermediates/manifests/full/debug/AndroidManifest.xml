@@ -25,12 +25,20 @@
             android:label="@string/main_activity_title" >
             <intent-filter>
                 <action android:name="com.google.android.glass.action.VOICE_TRIGGER" />
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
             <meta-data
                 android:name="com.google.android.glass.VoiceTrigger"
                 android:resource="@xml/voice_trigger" />
         </activity>
+        <activity android:name="com.MachineListActivity" />
+        <activity android:name="com.QRcodeActivity" />
+        <activity android:name="com.ApplianceMenuActivity" />
+        <activity android:name="com.AviationMenuActivity" />
+        <activity android:name="com.StepMenuActivity" />
     </application>
 
 </manifest>

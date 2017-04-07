@@ -25,7 +25,7 @@ import com.google.android.glass.widget.CardScrollView;
  * Created by eugenio.soberon on 05/04/2017.
  */
 
-public class QRcodeActivity extends Activity{
+public class ApplianceMenuActivity extends Activity{
 
     private static final String TAG = MachineListActivity.class.getSimpleName();
 
@@ -55,7 +55,7 @@ public class QRcodeActivity extends Activity{
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
-                        startMain();
+                        startSteps();
                     }
                 });
             }
@@ -75,13 +75,13 @@ public class QRcodeActivity extends Activity{
     private List<CardBuilder> createCards(Context context) {
 
         CardBuilder card1 = new CardBuilder(context, CardBuilder.Layout.TITLE);
-        card1.setText("This is the QR Code Activity");
+        card1.setText("Appliance Model 1");
 
         CardBuilder card2 = new CardBuilder(context, CardBuilder.Layout.TITLE);
-        card2.setText("More QR code cards");
+        card2.setText("Appliance Model 2");
 
         CardBuilder card3 = new CardBuilder(context, CardBuilder.Layout.TITLE);
-        card3.setText("QR coding woo");
+        card3.setText("Appliance Model 3");
 
         ArrayList<CardBuilder> cards = new ArrayList<CardBuilder>();
         cards.add(card1);
@@ -90,7 +90,6 @@ public class QRcodeActivity extends Activity{
 
         return cards;
     }
-
 
     @Override
     protected void onResume() {
@@ -104,8 +103,8 @@ public class QRcodeActivity extends Activity{
         super.onPause();
     }
 
-    private void startMain() {
-        startActivity(new Intent(this, SplashScreenActivity.class));
+    private void startSteps() {
+        startActivity(new Intent(this, StepMenuActivity.class));
         finish();
     }
 }

@@ -1,19 +1,25 @@
 package com;
 
+import java.util.ArrayList;
+import java.util.List;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
-import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 
-import android.media.AudioManager;
-import android.os.Handler;
+import com.google.android.glass.app.Card;
 import com.google.android.glass.media.Sounds;
 import com.google.android.glass.touchpad.Gesture;
 import com.google.android.glass.touchpad.GestureDetector;
+import com.google.android.glass.widget.CardBuilder;
+import com.google.android.glass.widget.CardScrollView;
 
 /**
  * Created by eugenio.soberon on 05/04/2017.
@@ -21,39 +27,98 @@ import com.google.android.glass.touchpad.GestureDetector;
 
 public class MachineListActivity extends Activity{
 
-    // Handler used to post new requests to start new activities
-    // so animation works correctly
-    private final Handler mHandler = new Handler();
+    private static final String TAG = MachineListActivity.class.getSimpleName();
 
+    private final Handler mHandler = new Handler();
     /** Audio manager used to play system sound effects. */
     private AudioManager mAudioManager;
 
     /** Gesture detector used to present the options menu. */
     private GestureDetector mGestureDetector;
 
-    /** Listener that displays the options menu when the touchpad is tapped. */
-    private final GestureDetector.BaseListener mBaseListener = new GestureDetector.BaseListener() {
-        @Override
-        public boolean onGesture(Gesture gesture) {
-            if (gesture == Gesture.TAP) {
-                mAudioManager.playSoundEffect(Sounds.TAP);
-                openOptionsMenu();
-                return true;
-            } else {
-                return false;
-            }
-        }
-    };
+
+    private Context context;
+    private CardScrollView mCardScroller;
+    private CardAdapter mCardAdapter;
 
     protected void onCreate(Bundle bundle) {
         super.onCreate(bundle);
 
-        setContentView(R.layout.title_ge_assist
-        );
+        context = this;
+        mCardAdapter = new CardAdapter(createCards(this));
 
-        mAudioManager = (AudioManager) getSystemService(Context.AUDIO_SERVICE);
-        mGestureDetector = new GestureDetector(this).setBaseListener(mBaseListener);
+        mCardScroller = new CardScrollView(this);
+        mCardScroller.setOnItemClickListener(new OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapter, View v, int position,
+                                    long arg3) {
+                switch (mCardScroller.getSelectedItemPosition()) {
+                    case 0 :
+                        mHandler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                startAviation();
+                            }
+                        });
+                        break;
+                    case 1:
+                        mHandler.post(new Runnable() {
+                            @Override
+                            public void run() {
+                                startAppliance();
+                            }
+                        });
+                }
+            }
+        });
+        mCardScroller.setAdapter(mCardAdapter);
+
+        setContentView(mCardScroller);
 
     }
 
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.main, menu);
+        return true;
+    }
+
+    private List<CardBuilder> createCards(Context context) {
+
+        CardBuilder card1 = new CardBuilder(context, CardBuilder.Layout.TITLE);
+        card1.setText("Aviation");
+
+
+        CardBuilder card2 = new CardBuilder(context, CardBuilder.Layout.TITLE);
+        card2.setText("Appliance");
+
+        ArrayList<CardBuilder> cards = new ArrayList<CardBuilder>();
+        cards.add(card1);
+        cards.add(card2);
+
+        return cards;
+    }
+
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mCardScroller.activate();
+    }
+
+    @Override
+    protected void onPause() {
+        mCardScroller.deactivate();
+        super.onPause();
+    }
+
+    private void startAviation() {
+        startActivity(new Intent(this, AviationMenuActivity.class));
+        finish();
+    }
+
+    private void startAppliance() {
+        startActivity(new Intent(this, ApplianceMenuActivity.class));
+        finish();
+    }
 }

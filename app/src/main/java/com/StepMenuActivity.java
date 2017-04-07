@@ -10,13 +10,7 @@ import android.media.AudioManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.Menu;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.AdapterView.OnItemClickListener;
 
-import com.google.android.glass.app.Card;
-import com.google.android.glass.media.Sounds;
-import com.google.android.glass.touchpad.Gesture;
 import com.google.android.glass.touchpad.GestureDetector;
 import com.google.android.glass.widget.CardBuilder;
 import com.google.android.glass.widget.CardScrollView;
@@ -25,7 +19,7 @@ import com.google.android.glass.widget.CardScrollView;
  * Created by eugenio.soberon on 05/04/2017.
  */
 
-public class QRcodeActivity extends Activity{
+public class StepMenuActivity extends Activity{
 
     private static final String TAG = MachineListActivity.class.getSimpleName();
 
@@ -48,18 +42,6 @@ public class QRcodeActivity extends Activity{
         mCardAdapter = new CardAdapter(createCards(this));
 
         mCardScroller = new CardScrollView(this);
-        mCardScroller.setOnItemClickListener(new OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapter, View v, int position,
-                                    long arg3) {
-                mHandler.post(new Runnable() {
-                    @Override
-                    public void run() {
-                        startMain();
-                    }
-                });
-            }
-        });
         mCardScroller.setAdapter(mCardAdapter);
 
         setContentView(mCardScroller);
@@ -75,22 +57,18 @@ public class QRcodeActivity extends Activity{
     private List<CardBuilder> createCards(Context context) {
 
         CardBuilder card1 = new CardBuilder(context, CardBuilder.Layout.TITLE);
-        card1.setText("This is the QR Code Activity");
+        card1.setText("Step 1");
+
 
         CardBuilder card2 = new CardBuilder(context, CardBuilder.Layout.TITLE);
-        card2.setText("More QR code cards");
-
-        CardBuilder card3 = new CardBuilder(context, CardBuilder.Layout.TITLE);
-        card3.setText("QR coding woo");
+        card2.setText("Step 2");
 
         ArrayList<CardBuilder> cards = new ArrayList<CardBuilder>();
         cards.add(card1);
         cards.add(card2);
-        cards.add(card3);
 
         return cards;
     }
-
 
     @Override
     protected void onResume() {
@@ -104,8 +82,9 @@ public class QRcodeActivity extends Activity{
         super.onPause();
     }
 
-    private void startMain() {
-        startActivity(new Intent(this, SplashScreenActivity.class));
+    private void startAviation() {
+        startActivity(new Intent(this, AviationMenuActivity.class));
         finish();
     }
+
 }
